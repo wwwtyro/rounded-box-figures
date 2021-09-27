@@ -1,0 +1,18 @@
+{
+  "name": "rounded-box-figures",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.2",
+    "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.3.0",
+    "regl": "^2.1.0",
+    "trackball-controller": "^2.0.0"
+  }
+}
