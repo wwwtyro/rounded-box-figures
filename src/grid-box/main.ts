@@ -29,6 +29,7 @@ function grid(start: vec3, right: vec3, up: vec3, width: number, height: number,
 
 const regl = REGL({ extensions: ["ANGLE_instanced_arrays"] });
 const canvas = document.getElementsByTagName("canvas")[0];
+canvas.style.touchAction = "none";
 
 const render = interleavedSegmentsRoundCapJoin3D(regl, 8);
 

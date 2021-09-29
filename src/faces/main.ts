@@ -13,6 +13,7 @@ const faces = [
 
 const regl = REGL();
 const canvas = document.getElementsByTagName("canvas")[0];
+canvas.style.touchAction = "none";
 
 const textures: REGL.Texture2D[] = [];
 

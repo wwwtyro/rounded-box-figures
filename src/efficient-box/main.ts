@@ -68,6 +68,7 @@ function roundedBoxPoint(point: vec3, size: vec3, radius: number) {
 
 const regl = REGL({ extensions: ["ANGLE_instanced_arrays"] });
 const canvas = document.getElementsByTagName("canvas")[0];
+canvas.style.touchAction = "none";
 
 const render = interleavedSegmentsRoundCapJoin3D(regl, 8);
 

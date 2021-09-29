@@ -7,6 +7,8 @@ const faces = [{ start: vec3.fromValues(-0.5, -0.5, +0.5), right: vec3.fromValue
 
 const regl = REGL({ extensions: ["ANGLE_instanced_arrays"] });
 const canvas = document.getElementsByTagName("canvas")[0];
+canvas.style.touchAction = "none";
+
 
 function grid(start: vec3, right: vec3, up: vec3, width: number, height: number, widthSteps: number, heightSteps: number) {
   const positions: vec3[] = [];
